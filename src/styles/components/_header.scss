@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $size-links-header;
+    width: 90%;
+    min-width: $size-min-width-header;
+    &__image {
+        width: $size-image-header;
+    }
+    &__link {
+        color: $color-primary;
+        margin: 15px;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@include responsive() {
+    .header {
+        font-size: calc($size-links-header / 2);
+        &__image {
+            width: calc($size-image-header / 2);
+        }
+        &__link {
+            margin: 7px;
+            text-transform: uppercase;
+        }
+    }
+}

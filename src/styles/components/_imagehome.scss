@@ -1,0 +1,54 @@
+.imageHome {
+    position: relative;
+    height: 250px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    &__image {
+        position: absolute;
+        z-index: 0;
+        object-fit: cover;
+        height: 250px;
+        width: 100%;
+        border-radius: 30px;
+    }
+    &__texte {
+        z-index: 1;
+        color: white;
+        font-size: 48px;
+        position: absolute;
+    }
+    &::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.3;
+        position: absolute;
+        border-radius: 30px;
+    }
+}
+
+@include responsive() {
+    .imageHome {
+        height: 150px;
+        justify-content: flex-start;
+        margin-top: 0px;
+        &__image {
+            height: 125px;
+            border-radius: 15px;
+        }
+        &__texte {
+            font-size: 24px;
+            width: 70%;
+            margin: 0px;
+            margin-left: 20px;
+        }
+        &::after {
+            border-radius: 15px;
+            height: 125px;
+        }
+    }
+}
