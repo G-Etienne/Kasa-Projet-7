@@ -1,7 +1,13 @@
-import { useState } from "react";
-import ImageButton from "../assets/images/V-buttom.png";
+//PAGES INFORMATIONS SUR UN LOGEMENT
 
+//Importation de useState et de l'image pour le boutton des barres ouvrante et fermantes
+import { useState } from "react";
+import ImageButton from "../../assets/images/V-buttom.png";
+
+//Composant fonction qui permet de construire les barres ouvrantes et fermantes
+//Ces barres contiennent les informations pour la description et les équipements
 function InfoRod({ title, texte }) {
+    //State pour ouvrir et fermer une barre
     const [isOpen, setIsOpen] = useState(false);
 
     if (isOpen === true) {
@@ -37,4 +43,5 @@ function InfoRod({ title, texte }) {
     }
 }
 
+//Exportation du composant fonction
 export default InfoRod;

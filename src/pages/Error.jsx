@@ -1,5 +1,8 @@
+//PAGE ERREUR 404
+//Importation de NavLink pour le retour à la page accueil
 import { NavLink } from "react-router-dom";
 
+//Composant fonction qui retourne les éléments pour construire la page erreur 404
 function Error() {
     return (
         <div className="error">
@@ -14,4 +17,5 @@ function Error() {
     );
 }
 
+//Exportation du composant fonction
 export default Error;

@@ -1,3 +1,4 @@
+//Style pour un élément de présentation d'un logement de la page d'accueil.
 .dwelling_container {
     width: 90%;
     padding: 20px;
@@ -50,6 +51,7 @@
     }
 }
 
+//Style responsive pour un élément de présentation d'un logement de la page d'accueil.
 @include responsive() {
     .dwelling_container {
         background-color: white;

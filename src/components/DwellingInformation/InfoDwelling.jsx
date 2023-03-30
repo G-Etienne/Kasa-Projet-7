@@ -1,10 +1,21 @@
+//PAGES INFORMATIONS SUR UN LOGEMENT
+
+//Importation du composant Tag
+//Importation de fontAwesome pour les étoiles (note)
+//Importation de l'icone étoile
 import Tag from "./Tag";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
+//Composant fonction qui retourne les éléments pour construire les informations
+//Ces éléments ne servent qu'a construire la partie des informations qui ne sont pas
+//dans les barres ouvrantes et fermantes
 function InfoDwelling({ dwelling }) {
+    //Constance qui contien la note du logement
     const howManyStar = parseInt(dwelling.rating);
 
+    //fonction qui assigne un sélécteur à l'étoile en fonction de la note
+    //Permet d'afficher les étoiles de couleur et grise.
     const ColorStar = (number) => {
         if (howManyStar >= number) {
             return "info-host__star-color";
@@ -60,4 +71,5 @@ function InfoDwelling({ dwelling }) {
     );
 }
 
+//Exportation du composant fonction
 export default InfoDwelling;

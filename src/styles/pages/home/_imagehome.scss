@@ -1,3 +1,4 @@
+//Style pour la partie image en haut de la page d'accueil
 .imageHome {
     position: relative;
     height: 250px;
@@ -31,6 +32,7 @@
     }
 }
 
+//Style responsive pour la partie image en haut de la page d'accueil
 @include responsive() {
     .imageHome {
         height: 150px;

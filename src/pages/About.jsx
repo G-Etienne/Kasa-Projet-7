@@ -1,8 +1,13 @@
-import ImageAbout from "../components/ImageAbout";
-import InfoRod from "../components/InfoRod";
+//PAGE A PROPOS
 
+//importation des composants pour la page
+import ImageAbout from "../components/About/ImageAbout";
+import InfoRod from "../components/About/InfoRod";
+
+//Importation des données nécéssaire pour construire la page.
 import Data from "../data/dataAbout.json";
 
+//Composant fonction qui retourne les éléments pour construire la page a propos
 function About() {
     return (
         <div className="about-container">
@@ -22,4 +27,5 @@ function About() {
     );
 }
 
+//Exportation du composant fonction
 export default About;

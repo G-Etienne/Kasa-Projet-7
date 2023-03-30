@@ -1,5 +1,10 @@
+//PAGES ACCUEIL
+
+//Importation de NavLink pour rediriger l'utilisateur vers la pages
+//d'information du logement choisi
 import { NavLink } from "react-router-dom";
 
+//Composant fonction qui retourne un élément permettant de présenter un logement.
 function Dwellings({ dwelling }) {
     return (
         <NavLink to={"/dwelling/" + dwelling.id} className="itemPresentation">
@@ -13,4 +18,5 @@ function Dwellings({ dwelling }) {
     );
 }
 
+//Exportation du composant fonction
 export default Dwellings;

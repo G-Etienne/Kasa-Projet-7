@@ -1,19 +1,25 @@
-import Dwellings from "../components/dwellings";
+//PAGE ACCUEIL
+
+//Imporation des composants pour construire la page
+import Dwellings from "../components/Home/Dwellings";
+import ImageHome from "../components/Home/ImageHome";
+
+//Importation des données nécéssaire pour la construction de la page
 import Data from "../data/data.json";
 
-import ImageHome from "../components/ImageHome";
-
+//Composant fonction qui retourne les éléments pour la construction de la page d'accueil
 function Home() {
     return (
         <>
             <ImageHome />
-            <div className="dwelling_container">
+            <nav className="dwelling_container">
                 {Data.map((item) => (
                     <Dwellings key={item.id} dwelling={item} />
                 ))}
-            </div>
+            </nav>
         </>
     );
 }
 
+//Exportation du composant fonction
 export default Home;

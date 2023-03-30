@@ -1,3 +1,4 @@
+//Style pour la partie "images plein écran" de la page infromations sur un logement.
 .big-image-dwelling {
     position: fixed;
     top: 0px;
@@ -9,8 +10,8 @@
     background-color: grey;
     &__picture {
         position: relative;
-        max-height: 70%;
-        max-width: 70%;
+        max-height: 65%;
+        max-width: 65%;
         object-fit: cover;
     }
     &__left-button {
@@ -22,10 +23,22 @@
         position: absolute;
         left: 87%;
     }
+    &__croix {
+        position: absolute;
+        z-index: 5;
+        height: 50px;
+        top: 5%;
+        right: 5%;
+    }
 }
 
+//Style responsive pour la partie "images plein écran" de la page d'information sur un logement
 @include responsive() {
     .big-image-dwelling {
+        &__picture {
+            max-height: 70%;
+            max-width: 70%;
+        }
         &__left-button {
             height: 30px;
             left: 5%;
@@ -33,6 +46,10 @@
         &__right-button {
             height: 30px;
             left: 90%;
+        }
+        &__croix {
+            height: 20px;
+            top: 5%;
         }
     }
 }

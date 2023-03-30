@@ -1,6 +1,12 @@
-import { useState } from "react";
-import ImageButton from "../assets/images/V-buttom.png";
+//PAGE A PROPOS
 
+//importation de useState
+//importation de l'image du bouton pour ouvrir et fermer les barres
+import { useState } from "react";
+import ImageButton from "../../assets/images/V-buttom.png";
+
+//Composant fonction qui retourne des éléments pour construire les barres contenant les informations
+//Si isOpen est false --> la barre est fermer, sinon elle affiche les informations
 function InfoRod({ title, texte }) {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -37,4 +43,5 @@ function InfoRod({ title, texte }) {
     }
 }
 
+//Exportation du composant fonction
 export default InfoRod;

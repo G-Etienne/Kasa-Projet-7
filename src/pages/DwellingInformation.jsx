@@ -1,9 +1,15 @@
-import ImageDwelling from "../components/ImageDwelling";
-import InfoDwelling from "../components/InfoDwelling";
-import InfoRodDwelling from "../components/InfoRodDwelling";
+//PAGES INFORMATIONS SUR UN LOGEMENT
+
+//Importation des composants pour construire la page d'information sur un logement.
+import ImageDwelling from "../components/DwellingInformation/ImageDwelling";
+import InfoDwelling from "../components/DwellingInformation/InfoDwelling";
+import InfoRodDwelling from "../components/DwellingInformation/InfoRodDwelling";
+//Importation des données nécéssaires pour contstruire la page.
 import Data from "../data/data.json";
+//Importation de useParams pour la récupération de l'id du logement
 import { useParams } from "react-router-dom";
 
+//Composant fonction qui retourne les éléments pour la construction de la page d'information sur un logement.
 function DwellingInfo() {
     const { id } = useParams();
 
@@ -30,4 +36,5 @@ function DwellingInfo() {
     );
 }
 
+//Exportation du composant fonction
 export default DwellingInfo;

@@ -1,3 +1,6 @@
+//PAGES INFORMATIONS SUR UN LOGEMENT
+
+//Composant fonction qui retourne un élément Tag
 function Tag({ texte }) {
     return (
         <div className="tag__container">
@@ -6,4 +9,5 @@ function Tag({ texte }) {
     );
 }
 
+//Exportation du composant fonction
 export default Tag;
