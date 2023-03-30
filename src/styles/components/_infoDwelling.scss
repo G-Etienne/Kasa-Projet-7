@@ -1,0 +1,136 @@
+.info-dwelling__container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-dwelling {
+    &__title {
+        color: $color-primary;
+        font-size: 36px;
+        margin-bottom: 0px;
+    }
+    &__location {
+        color: $color-primary;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    &__tags {
+        color: white;
+        display: flex;
+        padding-top: 10px;
+        flex-wrap: wrap;
+    }
+}
+.info-dwelling__bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-host {
+    display: flex;
+    margin-top: 30px;
+    &__name {
+        color: $color-primary;
+        font-size: 18px;
+        width: 50%;
+    }
+    &__picture {
+        border-radius: 50%;
+        width: 64px;
+        height: 64px;
+    }
+    &__star {
+        font-size: 24px;
+        margin-top: 10px;
+        &-color {
+            color: $color-primary;
+            margin: 5px;
+        }
+        &-grey {
+            color: #e3e3e3;
+            margin: 5px;
+        }
+    }
+}
+
+.info-dwelling__bottom {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.about__title-container.info {
+    width: 100%;
+    height: 55px;
+}
+
+.about.info-container {
+    min-width: 47%;
+    max-width: 47%;
+    margin-top: 30px;
+}
+
+@include responsive() {
+    .info-dwelling__container {
+        flex-direction: column;
+    }
+    .info-dwelling {
+        &__title {
+            font-size: 18px;
+        }
+        &__location {
+            font-size: 14px;
+        }
+        &__tags {
+            color: white;
+            display: flex;
+            padding-top: 0px;
+        }
+    }
+    .info-host-and-star {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .info-host {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        &__name {
+            font-size: 12px;
+        }
+        &__picture {
+            height: 32px;
+            width: 32px;
+        }
+        &__star {
+            font-size: 13px;
+            height: 100%;
+            &-color {
+                margin-right: 0px;
+            }
+            &-grey {
+                margin-right: 0px;
+            }
+        }
+    }
+    .info-dwelling__bottom {
+        margin-bottom: 0px;
+        margin-top: 5px;
+        flex-direction: column;
+    }
+
+    .about.info-container {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        min-width: 100%;
+    }
+    .about__title-container.info {
+        height: 30px;
+        border-radius: 5px;
+    }
+}

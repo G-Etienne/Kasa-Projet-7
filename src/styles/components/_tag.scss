@@ -1,0 +1,33 @@
+.tag {
+    &__container {
+        background-color: $color-primary;
+        margin-right: 20px;
+        height: 25px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 5px;
+        min-width: 100px;
+    }
+    &__texte {
+        margin: 0px;
+        font-size: 15px;
+    }
+}
+
+@include responsive() {
+    .tag {
+        &__container {
+            height: 20px;
+            border-radius: 5px;
+            margin-right: 10px;
+            min-width: 50px;
+        }
+        &__texte {
+            font-size: 10px;
+        }
+    }
+}
