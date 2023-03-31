@@ -6,7 +6,7 @@ import ImageButton from "../../assets/images/V-buttom.png";
 
 //Composant fonction qui permet de construire les barres ouvrantes et fermantes
 //Ces barres contiennent les informations pour la description et les équipements
-function InfoRod({ title, texte }) {
+function InfoRodDwelling({ title, texte }) {
     //State pour ouvrir et fermer une barre
     const [isOpen, setIsOpen] = useState(false);
 
@@ -48,4 +48,4 @@ function InfoRod({ title, texte }) {
 }
 
 //Exportation du composant fonction
-export default InfoRod;
+export default InfoRodDwelling;
