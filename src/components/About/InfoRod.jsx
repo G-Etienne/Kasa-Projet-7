@@ -13,7 +13,10 @@ function InfoRod({ title, texte }) {
     if (isOpen === true) {
         return (
             <div className="about">
-                <div className="about__title-container">
+                <div
+                    onClick={() => setIsOpen(false)}
+                    className="about__title-container"
+                >
                     <h2 className="about__title">{title}</h2>
                     <img
                         style={{ rotate: "180deg" }}
@@ -29,10 +32,12 @@ function InfoRod({ title, texte }) {
     } else if (isOpen === false) {
         return (
             <div className="about">
-                <div className="about__title-container">
+                <div
+                    onClick={() => setIsOpen(true)}
+                    className="about__title-container"
+                >
                     <h2 className="about__title">{title}</h2>
                     <img
-                        onClick={() => setIsOpen(true)}
                         src={ImageButton}
                         alt="Image pour le bouton fermer/ouvrir des barres d'informations."
                         className="about__title-button"

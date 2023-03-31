@@ -4,6 +4,9 @@
 import ImageDwelling from "../components/DwellingInformation/ImageDwelling";
 import InfoDwelling from "../components/DwellingInformation/InfoDwelling";
 import InfoRodDwelling from "../components/DwellingInformation/InfoRodDwelling";
+
+//importation de la page erreur en cas d'id introuvable.
+import Error from "../pages/Error";
 //Importation des données nécéssaires pour contstruire la page.
 import Data from "../data/data.json";
 //Importation de useParams pour la récupération de l'id du logement
@@ -14,26 +17,32 @@ function DwellingInfo() {
     const { id } = useParams();
 
     const data = Data.find((dwelling) => dwelling.id == id);
-
-    return (
-        <>
-            <div className="image-dwelling__container">
-                <ImageDwelling dwelling={data} />
-            </div>
-            <div className="info-dwelling__container">
-                <InfoDwelling dwelling={data} />
-            </div>
-            <div className="info-dwelling__bottom">
-                <InfoRodDwelling title="Description" texte={data.description} />
-                <InfoRodDwelling
-                    title="Équipements"
-                    texte={data.equipments.map((equipement) => (
-                        <p key={data.id + equipement}>{equipement}</p>
-                    ))}
-                />
-            </div>
-        </>
-    );
+    if (data) {
+        return (
+            <>
+                <div className="image-dwelling__container">
+                    <ImageDwelling dwelling={data} />
+                </div>
+                <div className="info-dwelling__container">
+                    <InfoDwelling dwelling={data} />
+                </div>
+                <div className="info-dwelling__bottom">
+                    <InfoRodDwelling
+                        title="Description"
+                        texte={data.description}
+                    />
+                    <InfoRodDwelling
+                        title="Équipements"
+                        texte={data.equipments.map((equipement) => (
+                            <p key={data.id + equipement}>{equipement}</p>
+                        ))}
+                    />
+                </div>
+            </>
+        );
+    } else {
+        return <Error />;
+    }
 }
 
 //Exportation du composant fonction

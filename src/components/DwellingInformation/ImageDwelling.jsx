@@ -31,57 +31,89 @@ function ImageDwelling({ dwelling }) {
     //Retourne les éléments pour la construction de la partie image de la page
     //onClick dans les balises images permet la mise à jour du state index
     if (bigPicture === false) {
-        return (
-            <div className="image-dwelling">
-                <img
-                    onClick={() => setBigPicture(true)}
-                    className="image-dwelling__picture"
-                    src={dwelling.pictures[index]}
-                    alt="Première photo du logement"
-                />
-                <img
-                    onClick={() => setIndex((index = index - 1))}
-                    className="image-dwelling__left-button"
-                    src={imageButton}
-                    alt="Image pour le bouton gauche."
-                />
-                <img
-                    onClick={() => setIndex((index = index + 1))}
-                    className="image-dwelling__right-button"
-                    src={imageButton}
-                    alt="Image pour le bouton droit."
-                />
-            </div>
-        );
+        if (lengthPictures > 1) {
+            return (
+                <div className="image-dwelling">
+                    <img
+                        onClick={() => setBigPicture(true)}
+                        className="image-dwelling__picture"
+                        src={dwelling.pictures[index]}
+                        alt="Première photo du logement"
+                    />
+                    <img
+                        onClick={() => setIndex((index = index - 1))}
+                        className="image-dwelling__left-button"
+                        src={imageButton}
+                        alt="Image pour le bouton gauche."
+                    />
+                    <img
+                        onClick={() => setIndex((index = index + 1))}
+                        className="image-dwelling__right-button"
+                        src={imageButton}
+                        alt="Image pour le bouton droit."
+                    />
+                </div>
+            );
+        } else {
+            return (
+                <div className="image-dwelling">
+                    <img
+                        onClick={() => setBigPicture(true)}
+                        className="image-dwelling__picture"
+                        src={dwelling.pictures[index]}
+                        alt="Première photo du logement"
+                    />
+                </div>
+            );
+        }
     } else if (bigPicture === true) {
-        return (
-            <div className="big-image-dwelling">
-                <img
-                    className="big-image-dwelling__croix"
-                    onClick={() => setBigPicture(false)}
-                    src={imageCroix}
-                    alt="image de croix pour aider à fermer le mode plein écran"
-                />
-                <img
-                    onClick={() => setBigPicture(false)}
-                    className="big-image-dwelling__picture"
-                    src={dwelling.pictures[index]}
-                    alt="Première photo du logement"
-                />
-                <img
-                    onClick={() => setIndex((index = index - 1))}
-                    className="big-image-dwelling__left-button"
-                    src={imageButton}
-                    alt="Image pour le bouton gauche."
-                />
-                <img
-                    onClick={() => setIndex((index = index + 1))}
-                    className="big-image-dwelling__right-button"
-                    src={imageButton}
-                    alt="Image pour le bouton droit."
-                />
-            </div>
-        );
+        if (lengthPictures > 1) {
+            return (
+                <div className="big-image-dwelling">
+                    <img
+                        className="big-image-dwelling__croix"
+                        onClick={() => setBigPicture(false)}
+                        src={imageCroix}
+                        alt="image de croix pour aider à fermer le mode plein écran"
+                    />
+                    <img
+                        onClick={() => setBigPicture(false)}
+                        className="big-image-dwelling__picture"
+                        src={dwelling.pictures[index]}
+                        alt="Première photo du logement"
+                    />
+                    <img
+                        onClick={() => setIndex((index = index - 1))}
+                        className="big-image-dwelling__left-button"
+                        src={imageButton}
+                        alt="Image pour le bouton gauche."
+                    />
+                    <img
+                        onClick={() => setIndex((index = index + 1))}
+                        className="big-image-dwelling__right-button"
+                        src={imageButton}
+                        alt="Image pour le bouton droit."
+                    />
+                </div>
+            );
+        } else {
+            return (
+                <div className="big-image-dwelling">
+                    <img
+                        className="big-image-dwelling__croix"
+                        onClick={() => setBigPicture(false)}
+                        src={imageCroix}
+                        alt="image de croix pour aider à fermer le mode plein écran"
+                    />
+                    <img
+                        onClick={() => setBigPicture(false)}
+                        className="big-image-dwelling__picture"
+                        src={dwelling.pictures[index]}
+                        alt="Première photo du logement"
+                    />
+                </div>
+            );
+        }
     }
 }
 
