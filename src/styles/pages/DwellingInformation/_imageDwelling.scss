@@ -1,4 +1,4 @@
-//Style pour la partie images de la page infromations sur un logement.
+//Style pour la partie images de la page informations sur un logement.
 .image-dwelling__container {
     position: relative;
     width: 100%;
@@ -36,7 +36,7 @@
     }
 }
 
-//Style responsive pour la partie images de la page d'information sur un logement
+//Style responsive pour la partie images de la page d'informations sur un logement
 @include responsive() {
     .image-dwelling {
         height: 255px;

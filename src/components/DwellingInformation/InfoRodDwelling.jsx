@@ -1,6 +1,6 @@
-//PAGES INFORMATIONS SUR UN LOGEMENT
+//PAGE INFORMATIONS SUR UN LOGEMENT
 
-//Importation de useState et de l'image pour le boutton des barres ouvrante et fermantes
+//Importation de useState et de l'image pour le boutton des barres ouvrantes et fermantes
 import { useState } from "react";
 import ImageButton from "../../assets/images/V-buttom.png";
 

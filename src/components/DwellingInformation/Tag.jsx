@@ -1,4 +1,4 @@
-//PAGES INFORMATIONS SUR UN LOGEMENT
+//PAGE INFORMATIONS SUR UN LOGEMENT
 
 //Composant fonction qui retourne un élément Tag
 function Tag({ texte }) {

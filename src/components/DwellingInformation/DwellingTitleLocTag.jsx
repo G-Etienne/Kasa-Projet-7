@@ -1,4 +1,4 @@
-//PAGES INFORMATIONS SUR UN LOGEMENT
+//PAGE INFORMATIONS SUR UN LOGEMENT
 
 //Importation du composant Tag
 import Tag from "./Tag";

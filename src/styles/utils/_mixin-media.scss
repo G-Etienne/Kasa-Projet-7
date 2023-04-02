@@ -1,4 +1,4 @@
-/* .......... mixin pour ajouter des media quieries ............... */
+/* .......... mixin pour ajouter des medias queries ............... */
 @mixin responsive() {
     @media screen and (max-width: $breakpoint-mobile) {
         @content;

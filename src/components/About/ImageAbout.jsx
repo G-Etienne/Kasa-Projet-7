@@ -3,7 +3,7 @@
 //Importation de l'image de la page A Propos
 import image from "../../assets/images/image-a-propo.png";
 
-//Composant fonction qui retourne un élément image avec la photo importer
+//Composant fonction qui retourne un élément image avec la photo importée
 function ImageAbout() {
     return (
         <img

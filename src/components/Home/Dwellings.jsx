@@ -1,7 +1,7 @@
-//PAGES ACCUEIL
+//PAGE ACCUEIL
 
-//Importation de NavLink pour rediriger l'utilisateur vers la pages
-//d'information du logement choisi
+//Importation de NavLink pour rediriger l'utilisateur vers la page
+//d'informations du logement choisi
 import { NavLink } from "react-router-dom";
 
 //Composant fonction qui retourne un élément permettant de présenter un logement.

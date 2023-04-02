@@ -1,4 +1,4 @@
-//Style pour la partie "images plein écran" de la page infromations sur un logement.
+//Style pour la partie "images plein écran" de la page informations sur un logement.
 .big-image-dwelling {
     position: fixed;
     top: 0px;
@@ -32,7 +32,7 @@
     }
 }
 
-//Style responsive pour la partie "images plein écran" de la page d'information sur un logement
+//Style responsive pour la partie "images plein écran" de la page d'informations sur un logement
 @include responsive() {
     .big-image-dwelling {
         &__picture {

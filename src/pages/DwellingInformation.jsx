@@ -1,22 +1,22 @@
-//PAGES INFORMATIONS SUR UN LOGEMENT
+//PAGE INFORMATIONS SUR UN LOGEMENT
 
-//Importation des composants pour construire la page d'information sur un logement.
+//Importation des composants pour construire la page d'informations sur un logement.
 import ImageDwelling from "../components/DwellingInformation/ImageDwelling";
 import InfoDwelling from "../components/DwellingInformation/InfoDwelling";
 import InfoRodDwelling from "../components/DwellingInformation/InfoRodDwelling";
 
-//importation de la page erreur en cas d'id introuvable.
+//Importation de la page erreur en cas d'id introuvable.
 import Error from "../pages/Error";
-//Importation des données nécéssaires pour contstruire la page.
+//Importation des données nécéssaires pour construire la page.
 import Data from "../data/data.json";
 //Importation de useParams pour la récupération de l'id du logement
 import { useParams } from "react-router-dom";
 
-//Composant fonction qui retourne les éléments pour la construction de la page d'information sur un logement.
+//Composant fonction qui retourne les éléments pour la construction de la page d'informations sur un logement.
 function DwellingInfo() {
     const { id } = useParams();
 
-    const data = Data.find((dwelling) => dwelling.id == id);
+    const data = Data.find((dwelling) => dwelling.id === id);
     if (data) {
         return (
             <>

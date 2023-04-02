@@ -1,4 +1,4 @@
-//PAGES INFORMATIONS SUR UN LOGEMENT
+//PAGE INFORMATIONS SUR UN LOGEMENT
 
 //Importation du composant contenant le titre du logement, la localisation et les tags
 //Importation du composant pour le nom et la photo de l'hôte
@@ -8,7 +8,7 @@ import DwellingInfosHost from "./DwellingInfoHost";
 import DwellingStar from "./DwellingStar";
 
 //Composant fonction qui retourne les éléments pour construire les informations
-//Ces éléments ne servent qu'a construire la partie des informations qui ne sont pas
+//Ces éléments ne servent qu'à construire la partie des informations qui ne sont pas
 //dans les barres ouvrantes et fermantes
 function InfoDwelling({ dwelling }) {
     return (

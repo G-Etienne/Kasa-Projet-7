@@ -1,4 +1,4 @@
-//Fichier JSX principale du site
+//Fichier JSX principal du site
 //Importation de React, react routeur dom et des routes du site
 import React from "react";
 import ReactDOM from "react-dom/client";

@@ -1,9 +1,9 @@
-//Importation de NavLink pour la navigation entre la page d'accueil et a propos
+//Importation de NavLink pour la navigation entre la page d'accueil et A propos
 //Importation de l'image du logo Kasa pour l'en-tête de la page.
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo/Kasa.png";
 
-//Composants fonction qui retourne un élément header avec un image et les liens de navigation
+//Composant fonction qui retourne un élément header avec une image et les liens de navigation
 const Header = () => {
     return (
         <header className="header">

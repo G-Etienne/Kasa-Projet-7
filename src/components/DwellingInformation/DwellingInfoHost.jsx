@@ -1,7 +1,6 @@
-//PAGES INFORMATIONS SUR UN LOGEMENT
+//PAGE INFORMATIONS SUR UN LOGEMENT
 
-//Composant fonction qui retourne les éléments pour construire la partie
-//information sur l'hôte
+//Composant fonction qui retourne les éléments pour construire la partie informations sur l'hôte
 function DwellingInfosHost({ thedwelling }) {
     return (
         <div className="info-host">
@@ -14,6 +13,6 @@ function DwellingInfosHost({ thedwelling }) {
         </div>
     );
 }
-//Exportation du composant fonction
 
+//Exportation du composant fonction
 export default DwellingInfosHost;

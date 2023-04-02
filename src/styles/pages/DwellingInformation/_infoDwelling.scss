@@ -1,4 +1,4 @@
-//Style pour les éléments sous l'image de la page information sur un logement
+//Style pour les éléments sous l'image de la page informations sur un logement
 .info-dwelling__container {
     width: 90%;
     display: flex;
@@ -74,7 +74,7 @@
     margin-top: 30px;
 }
 
-//Style responsive pour la partie sous l'image de la page d'information sur un logement
+//Style responsive pour la partie sous l'image de la page d'informations sur un logement
 @include responsive() {
     .info-dwelling__container {
         flex-direction: column;

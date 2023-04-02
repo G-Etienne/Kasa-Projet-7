@@ -1,4 +1,4 @@
-//Imporation du logo Kasa pour le pied de page
+//Importation du logo Kasa pour le pied de page
 import logo from "../assets/logo/Kasa-footer.png";
 
 //Composant fonction qui retourne un élément footer avec l'image du logo Kasa et le texte du footer.

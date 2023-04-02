@@ -1,10 +1,10 @@
 //PAGE ACCUEIL
 
-//Imporation des composants pour construire la page
+//Importation des composants pour construire la page
 import Dwellings from "../components/Home/Dwellings";
 import ImageHome from "../components/Home/ImageHome";
 
-//Importation des données nécéssaire pour la construction de la page
+//Importation des données nécéssaires pour la construction de la page
 import Data from "../data/data.json";
 
 //Composant fonction qui retourne les éléments pour la construction de la page d'accueil

@@ -1,4 +1,4 @@
-//PAGES INFORMATIONS SUR UN LOGEMENT
+//PAGE INFORMATIONS SUR UN LOGEMENT
 
 //Importation de l'image pour les boutons de défilement des images.
 //Importation de l'image croix pour fermer le mode plein écran
@@ -8,9 +8,9 @@ import imageCroix from "../../assets/images/croix.png";
 import { useEffect, useState } from "react";
 
 //Composant fonction retourne la partie image de la page
-//Si on clique sur l'image, le composants retourner sera une image plus grosse
+//Si on clique sur l'image, le composant retourné sera une image plus grande
 function ImageDwelling({ dwelling }) {
-    //Utilisatoion du state index pour le défilement des images
+    //Utilisation du state index pour le défilement des images
     let [index, setIndex] = useState(0);
     //Utilisation de bigPicture pour le mode plein écran
     let [bigPicture, setBigPicture] = useState(false);
@@ -18,7 +18,7 @@ function ImageDwelling({ dwelling }) {
     //Constance pour définir le nombre d'image pour un logement
     const lengthPictures = dwelling.pictures.length;
 
-    //Fonction qui permet de passe de la dernière image à la première et inversement.
+    //Fonction qui permet de passer de la dernière image à la première, et inversement.
     useEffect(() => {
         if (index < 0) {
             setIndex(lengthPictures - 1);
@@ -27,7 +27,7 @@ function ImageDwelling({ dwelling }) {
         }
     }, [index, lengthPictures]);
 
-    //Condition pour retourner l'image normal ou en plein écran selon le state bigPicture
+    //Condition pour retourner l'image normal, ou en plein écran selon le state bigPicture
     //Retourne les éléments pour la construction de la partie image de la page
     //onClick dans les balises images permet la mise à jour du state index
     if (bigPicture === false) {
