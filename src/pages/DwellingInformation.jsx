@@ -34,7 +34,10 @@ function DwellingInfo() {
                     <InfoRodDwelling
                         title="Équipements"
                         texte={data.equipments.map((equipement) => (
-                            <p key={data.id + equipement}>{equipement}</p>
+                            <span key={data.id + equipement}>
+                                {equipement}
+                                <br />
+                            </span>
                         ))}
                     />
                 </div>
