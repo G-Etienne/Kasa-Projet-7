@@ -3,13 +3,17 @@
     width: 90%;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 0px;
+
 }
 
 .info-dwelling {
     &__title {
         color: $color-primary;
+        font-weight: 500;
         font-size: 36px;
         margin-bottom: 0px;
+        line-height: 1.5;
     }
     &__location {
         color: $color-primary;
@@ -20,6 +24,8 @@
         color: white;
         display: flex;
         padding-top: 10px;
+        padding-bottom: 0px;
+        margin-bottom: 15px;
         flex-wrap: wrap;
     }
 }
@@ -30,11 +36,19 @@
 
 .info-host {
     display: flex;
+    justify-content: flex-end;
     margin-top: 30px;
     &__name {
+        text-align: end;
+        padding-top: 10px;
+        padding-right: 10px;
         color: $color-primary;
+        line-height: normal;
         font-size: 18px;
         width: 50%;
+        font-weight: 500;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
     &__picture {
         border-radius: 50%;
@@ -43,7 +57,8 @@
     }
     &__star {
         font-size: 24px;
-        margin-top: 10px;
+        margin-top: 25px;
+        margin-bottom: 15px;
         &-color {
             color: $color-primary;
             margin: 5px;
@@ -68,10 +83,14 @@
     height: 55px;
 }
 
+.about__title-container.info .about__title{
+    font-weight: 400;
+}
+
 .about.info-container {
     min-width: 47%;
     max-width: 47%;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 //Style responsive pour la partie sous l'image de la page d'informations sur un logement
@@ -84,24 +103,29 @@
             font-size: 18px;
         }
         &__location {
+            margin-top: 0px;
+            margin-bottom: 0px;
             font-size: 14px;
         }
         &__tags {
             color: white;
             display: flex;
             padding-top: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
         }
     }
     .info-host-and-star {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-        align-items: center;
+        height: 50px;
+        padding-top: 0px;
     }
     .info-host {
         display: flex;
         align-items: center;
-        margin-top: 5px;
+        margin-top: 0px;
         &__name {
             font-size: 12px;
         }
@@ -110,6 +134,8 @@
             width: 32px;
         }
         &__star {
+            padding-top: 15px;
+            margin-top: 0px;
             font-size: 13px;
             height: 100%;
             &-color {
@@ -121,6 +147,7 @@
         }
     }
     .info-dwelling__bottom {
+        line-height: 1.3em;
         margin-bottom: 0px;
         margin-top: 5px;
         flex-direction: column;

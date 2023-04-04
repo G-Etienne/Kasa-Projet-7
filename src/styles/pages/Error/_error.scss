@@ -7,18 +7,24 @@
     justify-content: center;
     align-items: center;
     color: $color-primary;
+
     &__title {
         font-size: 300px;
+        font-weight: 700;
+        padding: 200px;
+        padding-bottom: 185px;
         margin: 0px;
     }
     &__text {
         margin: 0px;
         font-size: 36px;
+        font-weight: 400;
         margin-bottom: 170px;
     }
     &__link {
         color: $color-primary;
         margin: 0px;
+        margin-top: 40px;
         font-size: 20px;
         margin-bottom: 110px;
     }
@@ -30,6 +36,8 @@
     .error {
         height: auto;
         &__title {
+            padding: 30px;
+            padding-top: 100px;
             font-size: 100px;
             margin-top: 100px;
         }
