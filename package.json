@@ -1,12 +1,15 @@
 {
     "name": "kasa-project",
     "private": true,
+    "homepage": "https://G-Etienne.github.io/Kasa-Projet-7",
     "version": "0.0.0",
     "type": "module",
     "scripts": {
         "start": "vite",
         "build": "vite build",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.4.0",
@@ -25,6 +28,7 @@
         "eslint": "^8.36.0",
         "eslint-plugin-react": "^7.32.2",
         "eslint-plugin-react-hooks": "^4.6.0",
+        "gh-pages": "^5.0.0",
         "prettier": "^2.8.7",
         "vite": "^4.2.0"
     }
