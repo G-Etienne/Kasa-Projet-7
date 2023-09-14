@@ -1,8 +1,38 @@
-Pour démarrer l'application : 
+* Kasa * 
 
---> npm start
+Le projet kasa est une application de location immbolière.
 
-mac : 
+L'intégration du HTML et des éléments dynamiques est construite avec React.JS .
 
---> sudo npm start
+Sass est utilisé pour le style.
+
+But de la mission : À l'aide de maquettes et d'un fichier JSON avec les informations sur les différents logement, mettre en place le visuel du site et les fonctions pour le changement de visuels suite à une interaction de l'utilisateur.
+
+ARCHITECTURE : 
+
+  - Le fichier "index.html" --> fichier HTML qui  va contenir la balise ou l'application React va venir ce greffer (code HTML racine).
+
+  - Dans src : 
+
+    - Le fichier "main.jsx" --> pour le code qui permet de greffer l'app React à index.html.
+
+    - Le Dossier "assets" --> contient les images présentes sur l'application.
+
+    - Le dossier "components" --> contient les différents fichiers pour construire un élément précis (la partie image d'une page, le footer, etc.). 
+      Ce sont des éléments qui sont présents sur plusieurs pages.
+
+    - Le dossier "data" --> qui contient deux dossiers avec les datas JSON qui sont utilisées sur le site.
+
+    - Le dossier "page" --> qui contient les 4 page présentent sur le site.
+
+    - Le dossier "routes" --> contient le code pour définir des routes de navigation sur le site (navigation entre page).
+
+    - Le dossier "styles" --> avec les différents codes SASS pour le style du site.
+      Ce dossier comprend : 
+        - Un dossier "base" --> règles communes sur tout le site.
+        - Un dossier "components" --> styles des petits composants du site.
+        - Un dossier "layout" --> les composants présents sur plusieurs pages du site.
+        - Un dossier "page " --> contient 4 dossiers (qui représentes les 4 pages du site) qui contient aux même les différents fichiers de styles pour les éléments présents uniquement sur une seule page du site.
+        - Un dossier "utils" --> avec les mixins et variables SASS.
+        - Un fichier "main.scss" --> avec l'import des différents fichiers de styles.
 
